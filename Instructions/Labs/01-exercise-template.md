@@ -1,6 +1,5 @@
----
-lab:
-  title: Erstellen eines benutzerdefinierten Agents
+
+Lab: 'Erstellen eines benutzerdefinierten Agents'
 ---
 <!--
 Edit the metadata above to manage the list of exercises in the home page of the GitHub site that gets generated.
@@ -48,7 +47,7 @@ Wählen Sie **Weiter** aus.
 
 ## Aufgabe 2: Implementieren von RAG für das Azure OpenAI-Modell
 
-Und jetzt, ...
+In dieser Aufgabe erfahren Sie, wie Sie RAG mithilfe einer Datenquelle für Ihre eigene Testumgebung implementieren.
 
 1. Klicken Sie auf der Seite für Ihre neu erstellte Azure OpenAI-Ressource im Menüband oben auf der Seite auf **Zu Azure OpenAI Studio wechseln**.
 2. Klicken Sie auf der neuen Seite mit dem Titel **Willkommen bei Azure OpenAI Service** im Navigationsmenü links neben dem Bildschirm auf die Option **Chat**.
@@ -78,7 +77,7 @@ Und jetzt, ...
 
  ## Aufgabe 3: Erstellen und Testen eines benutzerdefinierten Agents in Testtool und Teams
 
-Und jetzt, ...
+In dieser Aufgabe erstellen Sie den benutzerdefinierten Agent und testen den Agent.
 
 1. Öffnen Sie **Visual Studio Code**.
 2. Wählen Sie auf der rechten Seite des Visual Studio-Codefensters das Symbol **Teams Toolkit** aus > wählen Sie die Option **Neue App erstellen** aus > wählen Sie in der Dropdownliste **Benutzerdefinierter Modul-Agent** aus (Hinweis: Je nach Version des Teams-Toolkits müssen Sie möglicherweise die Option **Benutzerdefinierter Copilot** auswählen) > **Basic-KI-Chatbot** > **JavaScript** > **Azure OpenAI.**.
@@ -96,13 +95,25 @@ Und jetzt, ...
 
    f. Navigieren Sie im neuen VS Code-Fenster der neu erstellten App aus den Schritten a-f oben zum Symbol **Teams-Toolkit** auf der linken Seite des Bildschirms.
 
+   **Hinweis:** Die Schritte g–i sollten für die Umgebung eines Benutzers abgeschlossen werden, der keinen Administratorzugriff auf das Microsoft Teams Admin Center hat. Wenn Benutzer stattdessen über einen M365-Mandanten mit Administratorzugriff verfügen, führen Sie stattdessen die Schritte j–m aus.
+
    g. Klicken Sie im Abschnitt **Konten** auf **Bei Microsoft 365 anmelden**. Es öffnet sich ein neues Fenster in Ihrem Browser. Melden Sie sich mit den bereitgestellten Anmeldeinformationen an.
 
    h. Navigieren Sie zurück zur VS-Codeseite Ihrer App. Nun sollte ein grünes Häkchen mit den Wörtern **Benutzerdefinierter App-Upload aktiviert** unter **Konten angezeigt werden.
 
    i. Klicken Sie im Abschnitt **Konten** auf **Bei Azure anmelden**. Klicken Sie in jedem Popupfenster auf **OK**. Es öffnet sich ein neues Fenster in Ihrem Browser. Melden Sie sich mit den bereitgestellten Anmeldeinformationen an.
+
+   Für Benutzer, die über einen M365-Mandanten mit Administratorzugriff auf das Microsoft Teams Admin Center verfügen, führen Sie bitte die folgenden Schritte anstelle der oben aufgeführten Schritte aus:
+
+   j. Melden Sie sichhttps://admin.teams.microsoft.commit Ihren Administratoranmeldeinformationen an.
+
+   k. Wechseln Sie auf der Randleiste zu **Teams-Apps** , und wählen Sie dann  **Setuprichtlinien** aus.
+
+   l. Wählen Sie die  **Globale Richtlinie (organisationsweite Standardeinstellung)**  aus, und aktivieren Sie dann die Umschaltfläche  **Benutzerdefinierte Apps hochladen** .
+
+   m. Scrollen Sie nach unten, und wählen Sie die Schaltfläche  **Speichern**  aus, um die Firewalländerungen zu speichern. Ihr Mandant ist jetzt so konfiguriert, dass das Querladen von benutzerdefinierten Apps zulässig ist. 
    
-4. Navigieren Sie im VS-Codefenster Ihrer App zu **src/prompts/chat/skprompt.txt**. Löschen Sie jeglichen Text in der Datei, und fügen Sie Folgendes ein: „Es folgt eine Unterhaltung mit einem KI-Assistenten, der Experte für die Beantwortung von Fragen in dem gegebenen Kontext ist. 
+5. Navigieren Sie im VS-Codefenster Ihrer App zu **src/prompts/chat/skprompt.txt**. Löschen Sie jeglichen Text in der Datei, und fügen Sie Folgendes ein: „Es folgt eine Unterhaltung mit einem KI-Assistenten, der Experte für die Beantwortung von Fragen in dem gegebenen Kontext ist. 
 
 Antworten sollten in einem kurzen journalistischen Stil mit nicht mehr als 80 Wörtern erfolgen.“ 
 
