@@ -20,7 +20,7 @@ Diese Übung dauert ca. **30** Minuten. <!-- update with estimated duration -->
 Zunächst müssen Sie ...
 
 1. Navigieren Sie in Ihrem Edge-Browser zu **https://portal.azure.com**.
-1. Melden Sie sich mit den Ihnen in dieser Lab-Umgebung bereitgestellten Anmeldeinformationen beim Azure-Portal an.
+1. Melden Sie sich beim Azure-Portal an.
 2. Wählen Sie oben links auf dem Bildschirm die Option **+ Eine Ressource erstellen** aus.
 1. Geben Sie im Suchfeld **Azure OpenAI** ein und drücken Sie die EINGABETASTE.
 1. Ein Ergebnis namens **Azure OpenAI** sollte als Option angezeigt werden. In der unteren linken Ecke dieser Option befindet sich eine Schaltfläche mit der Bezeichnung **Erstellen**. Drücken Sie> **Erstellen** > **Azure OpenAI**.
@@ -49,14 +49,13 @@ Wählen Sie **Weiter** aus.
 
 In dieser Aufgabe erfahren Sie, wie Sie RAG mithilfe einer Datenquelle für Ihre eigene Testumgebung implementieren.
 
-1. Klicken Sie auf der Seite für Ihre neu erstellte Azure OpenAI-Ressource im Menüband oben auf der Seite auf **Zu Azure OpenAI Studio wechseln**.
-2. Klicken Sie auf der neuen Seite mit dem Titel **Willkommen bei Azure OpenAI Service** im Navigationsmenü links neben dem Bildschirm auf die Option **Chat**.
-3. Wählen Sie auf der neuen Seite **Chat-Playground** unter **Setup** die Option **+ Neue Bereitstellung erstellen** > **Aus Basismodellen** aus.
-4. Scrollen Sie im Popupfenster mit dem Titel **Chatabschlussmodell auswählen** nach unten, und wählen Sie die Option **gpt-4o** > **Bestätigen** aus.
-5. Lassen Sie im Fenster **Modell gtp-4o bereitstellen** alles in der Standardeinstellung, und wählen Sie **Bereitstellen** aus.
-6. Wählen Sie auf der Seite **Chat-Playground** die Option **Daten hinzufügen** am unteren Rand des Bildschirms aus, > **+ Eine Datenquelle hinzufügen**.
-7. Wählen Sie im Fenster **Datenquelle auswählen oder hinzufügen** die Option **Datenquelle auswählen** aus der Dropdownliste aus und wählen Sie die Option **Dateien hochladen (Vorschau)** aus.
-8. Stellen Sie auf der nächsten Seite für die Option **Datenquelle** sicher, dass die Dropdownliste für **Datenquelle auswählen** auf **Dateien hochladen (Vorschau)** festgelegt ist.
+1. Klicken Sie auf der Seite für Ihre neu erstellte Azure OpenAI-Ressource im Menüband oben auf der Seite auf **Zum Azure AI Foundry-Portal wechseln**.
+2. Wählen Sie auf der neuen Seite **Chat-Playground** unter **Setup** die Option **+ Neue Bereitstellung erstellen** > **Aus Basismodellen** aus.
+3. Scrollen Sie im Popupfenster mit dem Titel **Chatabschlussmodell auswählen** nach unten, und wählen Sie die Option **gpt-4o** > **Bestätigen** aus.
+4. Lassen Sie im Fenster **Modell gtp-4o bereitstellen** alles in der Standardeinstellung, und wählen Sie **Bereitstellen** aus.
+5. Wählen Sie auf der Seite **Chat-Playground** die Option **Daten hinzufügen** am unteren Rand des Bildschirms aus, > **+ Eine Datenquelle hinzufügen**.
+6. Wählen Sie im Fenster **Datenquelle auswählen oder hinzufügen** die Option **Datenquelle auswählen** aus der Dropdownliste aus und wählen Sie die Option **Dateien hochladen (Vorschau)** aus.
+7. Stellen Sie auf der nächsten Seite für die Option **Datenquelle** sicher, dass die Dropdownliste für **Datenquelle auswählen** auf **Dateien hochladen (Vorschau)** festgelegt ist.
    
    a. Stellen Sie im Feld **Abonnement** sicher, dass der Standardwert ausgewählt ist.
    
@@ -64,14 +63,14 @@ In dieser Aufgabe erfahren Sie, wie Sie RAG mithilfe einer Datenquelle für Ihre
    
    c. Navigieren Sie zurück zum Fenster für den **Chat-Playground**. Wählen Sie die Schaltfläche „Aktualisieren“ neben dem Feld **Azure Blob Storage-Ressource auswählen** aus, > wählen Sie die Ressource aus, die Sie in Schritt b oben erstellt haben. Wählen Sie die Schaltfläche **CORS aktivieren** aus.
    
-9. Wählen Sie für das Feld **Azure KI Search-Ressource** auswählen die Option **Neue Azure AI Search-Ressource erstellen** aus.  Stellen Sie sicher, dass die Felder **Abonnement** und **Ressourcengruppe** auf Werte Ihrer Wahl festgelegt sind. **Hinweis:** Da diese Übung in der eigenen Umgebung des Lernenden abgeschlossen werden soll, müssen die Lernenden beim Auswählen von Werten für die Felder **Abonnement** und **Ressourcengruppe** nach eigenem Ermessen vorgehen. Klicken Sie auf den Dropdownwert für **Ressourcengruppe**, um die gewünschte Option auszuwählen. Geben Sie einen **Dienstnamen** ein, > Stellen Sie sicher, dass alle anderen Felder auf die Standardwerte festgelegt sind, > wählen Sie **Überprüfen + Erstellen** > **Erstellen** aus. Die Bereitstellung der Azure KI Search-Ressource dauert einen Moment.
-10. Navigieren Sie zurück zum Fenster für den **Chat-Playground**. Wählen Sie die Schaltfläche „Aktualisieren“ neben dem Feld **Azure Blob Storage-Ressource auswählen** aus, > wählen Sie die Ressource aus, die Sie in Schritt 9 oben erstellt haben.
-11. Geben Sie einen Namen für das Feld **Indexname eingeben** > **Weiter** aus. Kopieren Sie diesen Namen, und fügen Sie ihn an einer zugänglichen Stelle ein, da Sie ihn für die anstehenden Aufgaben benötigen werden.
-12. Wählen Sie im Abschnitt **Dateien hochladen** die Option **Nach einer Datei suchen** aus > Navigieren Sie im Datei-Explorer zu **Dokumente** > wählen Sie alle drei Dateien aus: **ContosoAI ChipEnhance Perks Program.docx**, **ContosoAI Insurance Plans.docx** und **Overview of ContosoAI.docx** > **Öffnen** > Die drei Dateien sollten nun auf der Seite **Dateien hochladen** des Fensters angezeigt werden > Wählen Sie **Dateien hochladen** > **Weiter** aus.
-13. Lassen Sie im Abschnitt **Datenverwaltung** alles als Standard, und wählen Sie **Weiter** aus.
-14. Wählen Sie unter **Datenverbindung** die Option **API-Schlüssel** > **Weiter** > **Speichern und schließen** aus.
-15. Wählen Sie im Fenster **Chat-Playground** die Option **Code anzeigen** aus, der sich im Menüband oben links im Fenster befindet.
-16. Wählen Sie im Fenster **Beispielcode** die Dropdownliste rechts neben dem ersten Feld aus, und wählen Sie **json** aus > wechseln Sie zur Registerkarte **Schlüsselauthentifizierung**:
+8. Wählen Sie für das Feld **Azure KI Search-Ressource** auswählen die Option **Neue Azure AI Search-Ressource erstellen** aus.  Stellen Sie sicher, dass die Felder **Abonnement** und **Ressourcengruppe** auf Werte Ihrer Wahl festgelegt sind. **Hinweis:** Da diese Übung in der eigenen Umgebung des Lernenden abgeschlossen werden soll, müssen die Lernenden beim Auswählen von Werten für die Felder **Abonnement** und **Ressourcengruppe** nach eigenem Ermessen vorgehen. Klicken Sie auf den Dropdownwert für **Ressourcengruppe**, um die gewünschte Option auszuwählen. Geben Sie einen **Dienstnamen** ein, > Stellen Sie sicher, dass alle anderen Felder auf die Standardwerte festgelegt sind, > wählen Sie **Überprüfen + Erstellen** > **Erstellen** aus. Die Bereitstellung der Azure KI Search-Ressource dauert einen Moment.
+9. Navigieren Sie zurück zum Fenster für den **Chat-Playground**. Wählen Sie die Schaltfläche „Aktualisieren“ neben dem Feld **Azure Blob Storage-Ressource auswählen** aus, > wählen Sie die Ressource aus, die Sie in Schritt 9 oben erstellt haben.
+10. Geben Sie einen Namen für das Feld **Indexname eingeben** > **Weiter** aus. Kopieren Sie diesen Namen, und fügen Sie ihn an einer zugänglichen Stelle ein, da Sie ihn für die anstehenden Aufgaben benötigen werden.
+11. Wählen Sie im Abschnitt **Dateien hochladen** die Option **Nach einer Datei suchen** aus > Navigieren Sie im Datei-Explorer zu **Dokumente** > wählen Sie alle drei Dateien aus: **ContosoAI ChipEnhance Perks Program.docx**, **ContosoAI Insurance Plans.docx** und **Overview of ContosoAI.docx** > **Öffnen** > Die drei Dateien sollten nun auf der Seite **Dateien hochladen** des Fensters angezeigt werden > Wählen Sie **Dateien hochladen** > **Weiter** aus.
+12. Lassen Sie im Abschnitt **Datenverwaltung** alles als Standard, und wählen Sie **Weiter** aus.
+13. Wählen Sie unter **Datenverbindung** die Option **API-Schlüssel** > **Weiter** > **Speichern und schließen** aus.
+14. Wählen Sie im Fenster **Chat-Playground** die Option **Code anzeigen** aus, der sich im Menüband oben links im Fenster befindet.
+15. Wählen Sie im Fenster **Beispielcode** die Dropdownliste rechts neben dem ersten Feld aus, und wählen Sie **json** aus > wechseln Sie zur Registerkarte **Schlüsselauthentifizierung**:
     
     a. Kopieren Sie die folgenden Werte, und fügen Sie sie ein, da Sie sie in den anstehenden Aufgaben benötigen: **Endpunkt**, **API-Schlüssel** und **Azure Search-Ressourcenschlüssel**.  Sie können dieses Fenster auch geöffnet lassen, um diese Werte für die anstehenden Aufgaben zu sammeln.
 
@@ -155,4 +154,10 @@ Antworten sollten in einem kurzen journalistischen Stil mit nicht mehr als 80 W�
 11. Navigieren Sie zurück zum VS-Codefenster für Ihre App. Wählen Sie das Dropdown-Menü **Debuggen** aus und wählen Sie die Option **Debuggen in Teams (Edge)** aus. Drücken Sie dann **F5** oder die grüne Wiedergabetaste.
 13. Es öffnet sich ein neues Fenster in Ihrem Edge-Browser. Sie werden aufgefordert, sich anzumelden. Verwenden Sie die zum Anmelden bereitgestellten Anmeldeinformationen. Wenn Sie sich erfolgreich angemeldet haben, können Sie das Fenster schließen.
 14. Wiederholen Sie Schritt 11 noch einmal. Es sollte ein Fenster mit dem Titel Ihrer neu erstellten App angezeigt werden. Wählen Sie **Hinzufügen** > **Öffnen** aus.
-15. Herzlichen Glückwunsch! Sie können dem Agent jetzt jede Frage zu den RAG-Datendateien stellen. 
+15. Herzlichen Glückwunsch! Sie können dem Agent jetzt jede Frage zu den RAG-Datendateien stellen.
+16. **Hinweis:** Da dieser Agent mit Ihrem eigenen Abonnement für Bildungszwecke erstellt wurde, sollten die Benutzenden den Agent nach Abschluss dieses Labs löschen. Um einen benutzerdefinierten Agent in Microsoft Teams zu löschen, können Sie wie folgt vorgehen:
+- Wählen Sie den zu löschenden Agent, dann das Symbol **Weitere Optionen (...)** und schließlich **Löschen** aus.
+- Entfernen Sie den Agent aus einem Chat, indem Sie die Auslassungspunkte im Thread und dann **Apps verwalten** auswählen.
+- Wählen Sie in der Benutzeroberfläche für die Erstellung eines Agents die **Auslassungspunkte (...)** und dann **Löschen** aus.
+
+**ENDE DES LABS**
