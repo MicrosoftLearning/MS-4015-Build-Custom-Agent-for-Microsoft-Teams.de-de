@@ -63,14 +63,18 @@ In dieser Aufgabe erfahren Sie, wie Sie RAG mithilfe einer Datenquelle für Ihre
    
    c. Navigieren Sie zurück zum Fenster für den **Chat-Playground**. Wählen Sie die Schaltfläche „Aktualisieren“ neben dem Feld **Azure Blob Storage-Ressource auswählen** aus, > wählen Sie die Ressource aus, die Sie in Schritt b oben erstellt haben. Wählen Sie die Schaltfläche **CORS aktivieren** aus.
    
-8. Wählen Sie für das Feld **Azure KI Search-Ressource** auswählen die Option **Neue Azure AI Search-Ressource erstellen** aus.  Stellen Sie sicher, dass die Felder **Abonnement** und **Ressourcengruppe** auf Werte Ihrer Wahl festgelegt sind. **Hinweis:** Da diese Übung in der eigenen Umgebung des Lernenden abgeschlossen werden soll, müssen die Lernenden beim Auswählen von Werten für die Felder **Abonnement** und **Ressourcengruppe** nach eigenem Ermessen vorgehen. Klicken Sie auf den Dropdownwert für **Ressourcengruppe**, um die gewünschte Option auszuwählen. Geben Sie einen **Dienstnamen** ein, > Stellen Sie sicher, dass alle anderen Felder auf die Standardwerte festgelegt sind, > wählen Sie **Überprüfen + Erstellen** > **Erstellen** aus. Die Bereitstellung der Azure KI Search-Ressource dauert einen Moment.
-9. Navigieren Sie zurück zum Fenster für den **Chat-Playground**. Wählen Sie die Schaltfläche „Aktualisieren“ neben dem Feld **Azure Blob Storage-Ressource auswählen** aus, > wählen Sie die Ressource aus, die Sie in Schritt 9 oben erstellt haben.
-10. Geben Sie einen Namen für das Feld **Indexname eingeben** > **Weiter** aus. Kopieren Sie diesen Namen, und fügen Sie ihn an einer zugänglichen Stelle ein, da Sie ihn für die anstehenden Aufgaben benötigen werden.
-11. Wählen Sie im Abschnitt **Dateien hochladen** die Option **Nach einer Datei suchen** aus > Navigieren Sie im Datei-Explorer zu **Dokumente** > wählen Sie alle drei Dateien aus: **ContosoAI ChipEnhance Perks Program.docx**, **ContosoAI Insurance Plans.docx** und **Overview of ContosoAI.docx** > **Öffnen** > Die drei Dateien sollten nun auf der Seite **Dateien hochladen** des Fensters angezeigt werden > Wählen Sie **Dateien hochladen** > **Weiter** aus.
-12. Lassen Sie im Abschnitt **Datenverwaltung** alles als Standard, und wählen Sie **Weiter** aus.
-13. Wählen Sie unter **Datenverbindung** die Option **API-Schlüssel** > **Weiter** > **Speichern und schließen** aus.
-14. Wählen Sie im Fenster **Chat-Playground** die Option **Code anzeigen** aus, der sich im Menüband oben links im Fenster befindet.
-15. Wählen Sie im Fenster **Beispielcode** die Dropdownliste rechts neben dem ersten Feld aus, und wählen Sie **json** aus > wechseln Sie zur Registerkarte **Schlüsselauthentifizierung**:
+8. Wählen Sie für das Feld **Azure KI Search-Ressource** auswählen die Option **Neue Azure AI Search-Ressource erstellen** aus.  Stellen Sie sicher, dass die Felder **Abonnement** und **Ressourcengruppe** auf Werte Ihrer Wahl festgelegt sind.
+
+   **Hinweis:** Da diese Übung in der eigenen Umgebung des Lernenden abgeschlossen werden soll, müssen die Lernenden beim Auswählen von Werten für die Felder **Abonnement** und **Ressourcengruppe** nach eigenem Ermessen vorgehen.
+
+9. Klicken Sie auf den Dropdownwert für **Ressourcengruppe**, um die gewünschte Option auszuwählen. Geben Sie einen **Dienstnamen** ein, > Stellen Sie sicher, dass alle anderen Felder auf die Standardwerte festgelegt sind, > wählen Sie **Überprüfen + Erstellen** > **Erstellen** aus. Die Bereitstellung der Azure KI Search-Ressource dauert einen Moment.
+10. Navigieren Sie zurück zum Fenster für den **Chat-Playground**. Wählen Sie die Schaltfläche „Aktualisieren“ neben dem Feld **Azure Blob Storage-Ressource auswählen** aus, > wählen Sie die Ressource aus, die Sie in Schritt 9 oben erstellt haben.
+11. Geben Sie einen Namen für das Feld **Indexname eingeben** > **Weiter** aus. Kopieren Sie diesen Namen, und fügen Sie ihn an einer zugänglichen Stelle ein, da Sie ihn für die anstehenden Aufgaben benötigen werden.
+12. Wählen Sie im Abschnitt **Dateien hochladen** die Option **Nach einer Datei suchen** aus > Navigieren Sie im Datei-Explorer zu **Dokumente** > wählen Sie alle drei Dateien aus: **ContosoAI ChipEnhance Perks Program.docx**, **ContosoAI Insurance Plans.docx** und **Overview of ContosoAI.docx** > **Öffnen** > Die drei Dateien sollten nun auf der Seite **Dateien hochladen** des Fensters angezeigt werden > Wählen Sie **Dateien hochladen** > **Weiter** aus.
+13. Lassen Sie im Abschnitt **Datenverwaltung** alles als Standard, und wählen Sie **Weiter** aus.
+14. Wählen Sie unter **Datenverbindung** die Option **API-Schlüssel** > **Weiter** > **Speichern und schließen** aus.
+15. Wählen Sie im Fenster **Chat-Playground** die Option **Code anzeigen** aus, der sich im Menüband oben links im Fenster befindet.
+16. Wählen Sie im Fenster **Beispielcode** die Dropdownliste rechts neben dem ersten Feld aus, und wählen Sie **json** aus > wechseln Sie zur Registerkarte **Schlüsselauthentifizierung**:
     
     a. Kopieren Sie die folgenden Werte, und fügen Sie sie ein, da Sie sie in den anstehenden Aufgaben benötigen: **Endpunkt**, **API-Schlüssel** und **Azure Search-Ressourcenschlüssel**.  Sie können dieses Fenster auch geöffnet lassen, um diese Werte für die anstehenden Aufgaben zu sammeln.
 
