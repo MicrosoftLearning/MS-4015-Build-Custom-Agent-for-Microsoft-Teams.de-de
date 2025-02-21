@@ -11,9 +11,11 @@ To enable GitHub page publishing, edit the Page settings for the repo and publis
 
 In dieser Übung erstellen Sie eine Azure OpenAI-Ressource, die als Grundlage für die Erstellung Ihres benutzerdefinierten Agents dient.
 
-Diese Übung dauert ca. **30** Minuten. <!-- update with estimated duration -->
+Diese Übung dauert ca. **60** Minuten. <!-- update with estimated duration -->
 
-**Hinweis:** Von Lernenden wird erwartet, dass sie diese Übung in ihren eigenen Umgebungen abschließen.
+**Hinweis:** Lernende können diese Übung mit diesen Optionen abschließen.
+1) Die Skillable-Lab-Umgebung
+2) Von den Lernenden wird erwartet, dass sie dieses Lab in ihrer eigenen Umgebung für alle anderen ALHs durchführen.
 
 ##  Aufgabe 1: Erstellen einer Azure OpenAI-Ressource 
 
@@ -24,7 +26,9 @@ Zunächst müssen Sie ...
 2. Wählen Sie oben links auf dem Bildschirm die Option **+ Eine Ressource erstellen** aus.
 1. Geben Sie im Suchfeld **Azure OpenAI** ein und drücken Sie die EINGABETASTE.
 1. Ein Ergebnis namens **Azure OpenAI** sollte als Option angezeigt werden. In der unteren linken Ecke dieser Option befindet sich eine Schaltfläche mit der Bezeichnung **Erstellen**. Drücken Sie> **Erstellen** > **Azure OpenAI**.
-1. Auf der Seite **Azure OpenAI erstellen** legen Sie die folgenden Felder fest: **Hinweis:** Da dieses Lab in der eigenen Umgebung des Lernenden abgeschlossen werden soll, müssen die Lernenden beim Auswählen von Werten für die Felder **Abonnement**, **Tarif** und **Ressourcengruppe** nach eigenem Ermessen vorgehen.
+1. Legen Sie unter der Seite **Azure OpenAI erstellen** die folgenden Felder fest:
+
+**Hinweis:** Für Lernende, die ihre eigene Umgebung verwenden, müssen die Lernenden nach eigenem Ermessen Werte für die Felder **Abonnement** , **Tarif** und **Ressourcengruppe** auswählen. Wählen Sie für Lernende, die die Skillable-Lab-Umgebung verwenden, die Standardwerte für die Felder in den Schritten a-d unten aus.
    
    a. **Abonnement** Verwenden Sie beim Ausfüllen dieses Felds Ihr eigenes Ermessen.
    
@@ -56,16 +60,18 @@ In dieser Aufgabe erfahren Sie, wie Sie RAG mithilfe einer Datenquelle für Ihre
 5. Wählen Sie auf der Seite **Chat-Playground** die Option **Daten hinzufügen** am unteren Rand des Bildschirms aus, > **+ Eine Datenquelle hinzufügen**.
 6. Wählen Sie im Fenster **Datenquelle auswählen oder hinzufügen** die Option **Datenquelle auswählen** aus der Dropdownliste aus und wählen Sie die Option **Dateien hochladen (Vorschau)** aus.
 7. Stellen Sie auf der nächsten Seite für die Option **Datenquelle** sicher, dass die Dropdownliste für **Datenquelle auswählen** auf **Dateien hochladen (Vorschau)** festgelegt ist.
-   
+
+**Hinweise:** Für Lernende, die ihre eigene Umgebung verwenden, müssen die Benutzenden beim Ausfüllen der Felder für die Schritte a-c unten möglicherweise nach eigenem Ermessen vorgehen. Für Lernende, die die Skillable-Umgebung verwenden, verwenden Sie die Standardwerte wie in den Schritten a-b unten angegeben. 
+  
    a. Stellen Sie im Feld **Abonnement** sicher, dass der Standardwert ausgewählt ist.
    
-    b. Wählen Sie im Feld **Azure Blob Storage-Ressource auswählen** die Option **Neue Azure Blob Storage-Ressource erstellen** aus > Stellen Sie im neuen Fenster mit dem Titel **Speicherkonto erstellen** auf der Registerkarte **Grundlagen** sicher, dass die Felder **Abonnement** und **Ressourcengruppe** auf die Standardwerte festgelegt sind und wählen Sie den einzigen verfügbaren Wert für **Ressourcengruppe** aus. Geben Sie unter **Instanzdetails** einen Namen für den **Namen des Speicherkontos** an. Lassen Sie die restlichen Felder unverändert. Klicken Sie auf **Überprüfen + erstellen**. Wählen Sie auf der Registerkarte **Überprüfen + Erstellen** die Schaltfläche **Erstellen** aus. Die Bereitstellung der Azure Blob Storage-Ressource dauert einen Moment.
+   b. Wählen Sie im Feld **Azure Blob-Speicherressource auswählen** die Option **Eine neue Azure Blob-Speicherressource erstellen** > im neuen Fenster mit dem Titel **Speicherkonto erstellen** aus, stellen Sie unter der Registerkarte **Grundlagen** sicher, dass die Felder **Abonnement** und **Ressourcengruppe** auf die Standardwerte festgelegt sind, und wählen Sie den einzigen verfügbaren Wert für **Ressourcengruppe** aus.. Geben Sie unter **Instanzdetails** einen Namen für den **Namen des Speicherkontos** an. Lassen Sie die restlichen Felder unverändert. Klicken Sie auf **Überprüfen + erstellen**. Wählen Sie auf der Registerkarte **Überprüfen + Erstellen** die Schaltfläche **Erstellen** aus. Die Bereitstellung der Azure Blob Storage-Ressource dauert einen Moment.
    
    c. Navigieren Sie zurück zum Fenster für den **Chat-Playground**. Wählen Sie die Schaltfläche „Aktualisieren“ neben dem Feld **Azure Blob Storage-Ressource auswählen** aus, > wählen Sie die Ressource aus, die Sie in Schritt b oben erstellt haben. Wählen Sie die Schaltfläche **CORS aktivieren** aus.
    
 8. Wählen Sie für das Feld **Azure KI Search-Ressource** auswählen die Option **Neue Azure AI Search-Ressource erstellen** aus.  Stellen Sie sicher, dass die Felder **Abonnement** und **Ressourcengruppe** auf Werte Ihrer Wahl festgelegt sind.
 
-   **Hinweis:** Da diese Übung in der eigenen Umgebung des Lernenden abgeschlossen werden soll, müssen die Lernenden beim Auswählen von Werten für die Felder **Abonnement** und **Ressourcengruppe** nach eigenem Ermessen vorgehen.
+   **Hinweis:** Für Lernende, die ihre eigene Umgebung verwenden, wählen Sie bitte nach eigenem Ermessen Werte für die Felder **Abonnement** und **Ressourcengruppe**.
 
 9. Klicken Sie auf den Dropdownwert für **Ressourcengruppe**, um die gewünschte Option auszuwählen. Geben Sie einen **Dienstnamen** ein, > Stellen Sie sicher, dass alle anderen Felder auf die Standardwerte festgelegt sind, > wählen Sie **Überprüfen + Erstellen** > **Erstellen** aus. Die Bereitstellung der Azure KI Search-Ressource dauert einen Moment.
 10. Navigieren Sie zurück zum Fenster für den **Chat-Playground**. Wählen Sie die Schaltfläche „Aktualisieren“ neben dem Feld **Azure Blob Storage-Ressource auswählen** aus, > wählen Sie die Ressource aus, die Sie in Schritt 9 oben erstellt haben.
@@ -94,11 +100,12 @@ In dieser Aufgabe erstellen Sie den benutzerdefinierten Agent und testen den Age
 
    d. Wählen Sie für **Ordner auswählen, in dem sich Ihr Projektraumordner befindet** die Option **Standardordner** aus.
 
-   e. Für **Eingabe des Anwendungsnamens** geben Sie einen beliebigen Namen ein > **Eingabe**> im Pop-up-Fenster wählen Sie **Ja, ich vertraue den Autoren** aus.
+   e. Für **Anwendungsname eingeben** geben Sie einen beliebigen Namen ein > **Eingabe**> wählen Sie im Popup-Fenster **Ja, ich vertraue den Autoren**.
 
-   f. Navigieren Sie im neuen VS Code-Fenster der neu erstellten App aus den Schritten a-f oben zum Symbol **Teams-Toolkit** auf der linken Seite des Bildschirms.
+   f. Navigieren Sie im neuen VS Code-Fenster der neu erstellten App aus den Schritten a-f oben zum Symbol **Teams Toolkit** auf der linken Seite des Bildschirms.
 
-   **Hinweis:** Die Schritte g–i sollten für die Umgebung eines Benutzers abgeschlossen werden, der keinen Administratorzugriff auf das Microsoft Teams Admin Center hat. Wenn Benutzer stattdessen über einen M365-Mandanten mit Administratorzugriff verfügen, führen Sie stattdessen die Schritte j–m aus.
+   **Hinweis:** Die Schritte g-i sollten für die Umgebung von Benutzenden durchgeführt werden, die keinen Admin-Zugriff auf das Microsoft Teams Admin Center haben, und/oder für Lernende, die die Skillable-Umgebung verwenden.
+  Führen Sie für Lernende mit ihren eigenen Umgebungen stattdessen die Schritte j-m aus.
 
    g. Klicken Sie im Abschnitt **Konten** auf **Bei Microsoft 365 anmelden**. Es öffnet sich ein neues Fenster in Ihrem Browser. Melden Sie sich mit den bereitgestellten Anmeldeinformationen an.
 
@@ -106,7 +113,7 @@ In dieser Aufgabe erstellen Sie den benutzerdefinierten Agent und testen den Age
 
    i. Klicken Sie im Abschnitt **Konten** auf **Bei Azure anmelden**. Klicken Sie in jedem Popupfenster auf **OK**. Es öffnet sich ein neues Fenster in Ihrem Browser. Melden Sie sich mit den bereitgestellten Anmeldeinformationen an.
 
-   Für Benutzer, die über einen M365-Mandanten mit Administratorzugriff auf das Microsoft Teams Admin Center verfügen, führen Sie bitte die folgenden Schritte anstelle der oben aufgeführten Schritte aus:
+   Für Benutzende, die eine M365-Lizenz für Mandanten mit Administratorzugriff auf das Microsoft Teams Admin Center haben, führen Sie bitte die folgenden Schritte anstelle der Schritte g-i oben aus:
 
    j. Melden Sie sichhttps://admin.teams.microsoft.commit Ihren Administratoranmeldeinformationen an.
 
@@ -116,7 +123,7 @@ In dieser Aufgabe erstellen Sie den benutzerdefinierten Agent und testen den Age
 
    m. Scrollen Sie nach unten, und wählen Sie die Schaltfläche  **Speichern**  aus, um die Firewalländerungen zu speichern. Ihr Mandant ist jetzt so konfiguriert, dass das Querladen von benutzerdefinierten Apps zulässig ist. 
    
-5. Navigieren Sie im VS-Codefenster Ihrer App zu **src/prompts/chat/skprompt.txt**. Löschen Sie jeglichen Text in der Datei, und fügen Sie Folgendes ein: „Es folgt eine Unterhaltung mit einem KI-Assistenten, der Experte für die Beantwortung von Fragen in dem gegebenen Kontext ist. 
+4. Navigieren Sie im VS-Codefenster Ihrer App zu **src/prompts/chat/skprompt.txt**. Löschen Sie jeglichen Text in der Datei, und fügen Sie Folgendes ein: „Es folgt eine Unterhaltung mit einem KI-Assistenten, der Experte für die Beantwortung von Fragen in dem gegebenen Kontext ist. 
 
 Antworten sollten in einem kurzen journalistischen Stil mit nicht mehr als 80 Wörtern erfolgen.“ 
 
@@ -159,9 +166,12 @@ Antworten sollten in einem kurzen journalistischen Stil mit nicht mehr als 80 W�
 13. Es öffnet sich ein neues Fenster in Ihrem Edge-Browser. Sie werden aufgefordert, sich anzumelden. Verwenden Sie die zum Anmelden bereitgestellten Anmeldeinformationen. Wenn Sie sich erfolgreich angemeldet haben, können Sie das Fenster schließen.
 14. Wiederholen Sie Schritt 11 noch einmal. Es sollte ein Fenster mit dem Titel Ihrer neu erstellten App angezeigt werden. Wählen Sie **Hinzufügen** > **Öffnen** aus.
 15. Herzlichen Glückwunsch! Sie können dem Agent jetzt jede Frage zu den RAG-Datendateien stellen.
-16. **Hinweis:** Da dieser Agent mit Ihrem eigenen Abonnement für Bildungszwecke erstellt wurde, sollten die Benutzenden den Agent nach Abschluss dieses Labs löschen. Um einen benutzerdefinierten Agent in Microsoft Teams zu löschen, können Sie wie folgt vorgehen:
+16. **Hinweis:** Für Lernende, die dieses Lab in ihrer eigenen Umgebung absolvieren, wurde dieser Agent für Bildungszwecke unter Verwendung Ihres eigenen Abonnements erstellt. Benutzende sollten den Agent nach Abschluss dieses Labs löschen. Um einen benutzerdefinierten Agent in Microsoft Teams zu löschen, können Sie wie folgt vorgehen:
 - Wählen Sie den zu löschenden Agent, dann das Symbol **Weitere Optionen (...)** und schließlich **Löschen** aus.
 - Entfernen Sie den Agent aus einem Chat, indem Sie die Auslassungspunkte im Thread und dann **Apps verwalten** auswählen.
-- Wählen Sie in der Benutzeroberfläche für die Erstellung eines Agents die **Auslassungspunkte (...)** und dann **Löschen** aus.
+- Wählen Sie aus der Authoring-Erfahrung eines Agents die **Ellipsen (…)** aus und wählen Sie **Löschen**. Wählen Sie aus der Authoring-Erfahrung eines Agents die **Ellipsen (…)** aus und wählen Sie **Löschen**.
+
+**ENDE DES LABS**
+
 
 **ENDE DES LABS**
