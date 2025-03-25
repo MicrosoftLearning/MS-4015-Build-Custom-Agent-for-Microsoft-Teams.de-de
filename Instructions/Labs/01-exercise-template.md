@@ -14,7 +14,7 @@ In dieser Übung erstellen Sie eine Azure OpenAI-Ressource, die als Grundlage f�
 Diese Übung dauert ca. **60** Minuten. <!-- update with estimated duration -->
 
 **Hinweis:** Lernende können diese Übung mit diesen Optionen abschließen.
-1) Die Skillable-Lab-Umgebung
+1) Eine Übungsumgebung, die für die Lernenden bereitgestellt wird.
 2) Von den Lernenden wird erwartet, dass sie dieses Lab in ihrer eigenen Umgebung für alle anderen ALHs durchführen.
 
 ##  Aufgabe 1: Erstellen einer Azure OpenAI-Ressource 
@@ -28,7 +28,7 @@ Zunächst müssen Sie ...
 1. Ein Ergebnis namens **Azure OpenAI** sollte als Option angezeigt werden. In der unteren linken Ecke dieser Option befindet sich eine Schaltfläche mit der Bezeichnung **Erstellen**. Drücken Sie> **Erstellen** > **Azure OpenAI**.
 1. Legen Sie unter der Seite **Azure OpenAI erstellen** die folgenden Felder fest:
 
-**Hinweis:** Für Lernende, die ihre eigene Umgebung verwenden, müssen die Lernenden nach eigenem Ermessen Werte für die Felder **Abonnement** , **Tarif** und **Ressourcengruppe** auswählen. Wählen Sie für Lernende, die die Skillable-Lab-Umgebung verwenden, die Standardwerte für die Felder in den Schritten a-d unten aus.
+**Hinweis:** Für Lernende, die ihre eigene Umgebung verwenden, müssen die Lernenden nach eigenem Ermessen Werte für die Felder **Abonnement** , **Tarif** und **Ressourcengruppe** auswählen. Für Lernende, die die bereitgestellte Übungsumgebung verwenden, wählen Sie die Standardwerte für die Felder in den Schritten a-d unten aus.
    
    a. **Abonnement** Verwenden Sie beim Ausfüllen dieses Felds Ihr eigenes Ermessen.
    
@@ -61,7 +61,7 @@ In dieser Aufgabe erfahren Sie, wie Sie RAG mithilfe einer Datenquelle für Ihre
 6. Wählen Sie im Fenster **Datenquelle auswählen oder hinzufügen** die Option **Datenquelle auswählen** aus der Dropdownliste aus und wählen Sie die Option **Dateien hochladen (Vorschau)** aus.
 7. Stellen Sie auf der nächsten Seite für die Option **Datenquelle** sicher, dass die Dropdownliste für **Datenquelle auswählen** auf **Dateien hochladen (Vorschau)** festgelegt ist.
 
-**Hinweise:** Für Lernende, die ihre eigene Umgebung verwenden, müssen die Benutzenden beim Ausfüllen der Felder für die Schritte a-c unten möglicherweise nach eigenem Ermessen vorgehen. Für Lernende, die die Skillable-Umgebung verwenden, verwenden Sie die Standardwerte wie in den Schritten a-b unten angegeben. 
+**Hinweise:** Für Lernende, die ihre eigene Umgebung verwenden, müssen die Benutzenden beim Ausfüllen der Felder für die Schritte a-c unten möglicherweise nach eigenem Ermessen vorgehen. Für Lernende, die die bereitgestellte Übungsumgebung verwenden, verwenden Sie die Standardwerte wie in den Schritten a-b unten angegeben. 
   
    a. Stellen Sie im Feld **Abonnement** sicher, dass der Standardwert ausgewählt ist.
    
@@ -104,7 +104,7 @@ In dieser Aufgabe erstellen Sie den benutzerdefinierten Agent und testen den Age
 
    f. Navigieren Sie im neuen VS Code-Fenster der neu erstellten App aus den Schritten a-f oben zum Symbol **Teams Toolkit** auf der linken Seite des Bildschirms.
 
-   **Hinweis:** Die Schritte g-i sollten für die Umgebung von Benutzenden durchgeführt werden, die keinen Admin-Zugriff auf das Microsoft Teams Admin Center haben, und/oder für Lernende, die die Skillable-Umgebung verwenden.
+   **Hinweis:** Die Schritte g-i sollten für eine Benutzerumgebung abgeschlossen werden, die keinen Admin-Zugriff auf das Microsoft Teams Admin Center hat, und/oder für Lernende, die die bereitgestellte Übungsumgebung verwenden.
   Führen Sie für Lernende mit ihren eigenen Umgebungen stattdessen die Schritte j-m aus.
 
    g. Klicken Sie im Abschnitt **Konten** auf **Bei Microsoft 365 anmelden**. Es öffnet sich ein neues Fenster in Ihrem Browser. Melden Sie sich mit den bereitgestellten Anmeldeinformationen an.
